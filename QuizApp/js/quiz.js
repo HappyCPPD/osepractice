@@ -75,11 +75,25 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const selectedLetter = clickedOption.dataset.letter;
         
+        // Create feedback message element if it doesn't exist
+        let feedbackEl = document.getElementById('answer-feedback');
+        if (!feedbackEl) {
+            feedbackEl = document.createElement('div');
+            feedbackEl.id = 'answer-feedback';
+            feedbackEl.className = 'answer-feedback';
+            const optionsContainer = document.getElementById('options-list');
+            if (optionsContainer && optionsContainer.parentNode) {
+                optionsContainer.parentNode.insertBefore(feedbackEl, optionsContainer.nextSibling);
+            }
+        }
+        
         if (selectedLetter === question.answer) {
             // Correct answer
             correctAnswers++;
             clickedOption.classList.add('correct');
             question.userAnsweredCorrectly = true;
+            feedbackEl.textContent = "Correct!";
+            feedbackEl.className = 'answer-feedback correct';
         } else {
             // Incorrect answer
             clickedOption.classList.add('incorrect');
@@ -89,10 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const correctOption = document.querySelector(`.option[data-letter="${question.answer}"]`);
             if (correctOption) {
                 correctOption.classList.add('correct');
+                feedbackEl.textContent = `Incorrect. The correct answer is: ${correctOption.querySelector('.option-text').textContent}`;
+                feedbackEl.className = 'answer-feedback incorrect';
             }
         }
         
-        document.getElementById('next-question').disabled = false;
+        // Disable the next button for a moment to ensure feedback is seen
+        const nextButton = document.getElementById('next-question');
+        if (nextButton) {
+            nextButton.disabled = true;
+            // Enable after a short delay
+            setTimeout(() => {
+                nextButton.disabled = false;
+            }, 1000); // 1 second delay
+        }
     });
 });
 
@@ -304,6 +328,13 @@ function showQuestion() {
             questionTextElement.textContent = question.question || "Question not available";
         }
         
+        // Reset any existing feedback
+        const feedbackElement = document.getElementById('answer-feedback');
+        if (feedbackElement) {
+            feedbackElement.textContent = '';
+            feedbackElement.className = 'answer-feedback hidden';
+        }
+        
         // Show options
         const optionsList = document.getElementById('options-list');
         if (!optionsList) return;
@@ -354,16 +385,19 @@ function showQuestion() {
         const nextButton = document.getElementById('next-question');
         const finishButton = document.getElementById('finish-quiz');
         
-        if (nextButton) nextButton.disabled = true;
+        if (nextButton) {
+            nextButton.disabled = true;
+            nextButton.classList.remove('hidden');
+        }
         
-        if (finishButton) finishButton.classList.add('hidden');
+        if (finishButton) {
+            finishButton.classList.add('hidden');
+        }
         
         // Show finish button on last question
         if (currentQuestionIndex === currentQuestions.length - 1) {
             if (nextButton) nextButton.classList.add('hidden');
             if (finishButton) finishButton.classList.remove('hidden');
-        } else {
-            if (nextButton) nextButton.classList.remove('hidden');
         }
     } catch (error) {
         console.error("Error showing question:", error);
