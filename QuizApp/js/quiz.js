@@ -182,7 +182,8 @@ function showQuestion() {
     document.getElementById('progress-bar').style.width = `${(questionNum / totalQuestions) * 100}%`;
     
     // Show chapter info
-    document.getElementById('current-chapter').textContent = `Chapter ${question.chapterNum}: ${chapterList.find(c => c.num === question.chapterNum).title}`;
+    const foundChapter = chapterList.find(c => c.num === question.chapterNum);
+    document.getElementById('current-chapter').textContent = `Chapter ${question.chapterNum}: ${foundChapter ? foundChapter.title : 'Unknown'}`;
     
     // Show question
     document.getElementById('question-text').textContent = question.question;
