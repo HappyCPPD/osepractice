@@ -75,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const selectedLetter = clickedOption.dataset.letter;
         
+        // Save the user's answer for the review screen
+        question.userAnswer = selectedLetter;
+        
         // Create feedback message element if it doesn't exist
         let feedbackEl = document.getElementById('answer-feedback');
         if (!feedbackEl) {
@@ -507,8 +510,41 @@ function finishQuiz() {
             chapterInfo.className = 'review-chapter';
             chapterInfo.textContent = `Chapter ${question.chapterNum || 'Unknown'}`;
             
+            // Add the correct answer to each question
+            const answerInfo = document.createElement('div');
+            answerInfo.className = 'review-answer';
+            
+            // Find the text of the correct answer
+            let correctAnswerText = '';
+            if (question.options && Array.isArray(question.options)) {
+                const answerIndex = question.answer.charCodeAt(0) - 65; // Convert A, B, C, D back to 0, 1, 2, 3
+                if (answerIndex >= 0 && answerIndex < question.options.length) {
+                    correctAnswerText = question.options[answerIndex];
+                }
+            }
+            
+            answerInfo.textContent = `Correct answer: ${correctAnswerText || question.answer}`;
+            
+            // If user answered incorrectly, show what they chose
+            if (!isCorrect && question.userAnswer) {
+                const userAnswerInfo = document.createElement('div');
+                userAnswerInfo.className = 'review-user-answer';
+                
+                let userAnswerText = '';
+                if (question.options && Array.isArray(question.options)) {
+                    const userAnswerIndex = question.userAnswer.charCodeAt(0) - 65;
+                    if (userAnswerIndex >= 0 && userAnswerIndex < question.options.length) {
+                        userAnswerText = question.options[userAnswerIndex];
+                    }
+                }
+                
+                userAnswerInfo.textContent = `Your answer: ${userAnswerText || question.userAnswer}`;
+                questionDiv.appendChild(userAnswerInfo);
+            }
+            
             questionDiv.appendChild(questionText);
             questionDiv.appendChild(chapterInfo);
+            questionDiv.appendChild(answerInfo);
             reviewList.appendChild(questionDiv);
         });
         
