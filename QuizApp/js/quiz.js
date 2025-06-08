@@ -502,49 +502,62 @@ function finishQuiz() {
             const questionDiv = document.createElement('div');
             questionDiv.className = `review-item ${isCorrect ? 'correct' : 'incorrect'}`;
             
+            // Question number and text
             const questionText = document.createElement('div');
             questionText.className = 'review-question';
             questionText.textContent = `${index + 1}. ${question.question || 'Question not available'}`;
+            questionDiv.appendChild(questionText);
             
+            // Chapter info
             const chapterInfo = document.createElement('div');
             chapterInfo.className = 'review-chapter';
             chapterInfo.textContent = `Chapter ${question.chapterNum || 'Unknown'}`;
-            
-            // Add the correct answer to each question
-            const answerInfo = document.createElement('div');
-            answerInfo.className = 'review-answer';
-            
-            // Find the text of the correct answer
-            let correctAnswerText = '';
-            if (question.options && Array.isArray(question.options)) {
-                const answerIndex = question.answer.charCodeAt(0) - 65; // Convert A, B, C, D back to 0, 1, 2, 3
-                if (answerIndex >= 0 && answerIndex < question.options.length) {
-                    correctAnswerText = question.options[answerIndex];
-                }
-            }
-            
-            answerInfo.textContent = `Correct answer: ${correctAnswerText || question.answer}`;
-            
-            // If user answered incorrectly, show what they chose
-            if (!isCorrect && question.userAnswer) {
-                const userAnswerInfo = document.createElement('div');
-                userAnswerInfo.className = 'review-user-answer';
-                
-                let userAnswerText = '';
-                if (question.options && Array.isArray(question.options)) {
-                    const userAnswerIndex = question.userAnswer.charCodeAt(0) - 65;
-                    if (userAnswerIndex >= 0 && userAnswerIndex < question.options.length) {
-                        userAnswerText = question.options[userAnswerIndex];
-                    }
-                }
-                
-                userAnswerInfo.textContent = `Your answer: ${userAnswerText || question.userAnswer}`;
-                questionDiv.appendChild(userAnswerInfo);
-            }
-            
-            questionDiv.appendChild(questionText);
             questionDiv.appendChild(chapterInfo);
-            questionDiv.appendChild(answerInfo);
+            
+            // Show all answer options with the correct one highlighted
+            const optionsContainer = document.createElement('div');
+            optionsContainer.className = 'review-options';
+            
+            if (question.options && Array.isArray(question.options)) {
+                // Create a list of all options
+                question.options.forEach((optionText, optIdx) => {
+                    const letter = String.fromCharCode(65 + optIdx);
+                    const isCorrectAnswer = letter === question.answer;
+                    const isUserAnswer = letter === question.userAnswer;
+                    
+                    const optionDiv = document.createElement('div');
+                    optionDiv.className = `review-option ${isCorrectAnswer ? 'correct' : ''} ${isUserAnswer && !isCorrectAnswer ? 'incorrect' : ''}`;
+                    
+                    const optionLetter = document.createElement('span');
+                    optionLetter.className = 'review-option-letter';
+                    optionLetter.textContent = letter;
+                    
+                    const optionTextSpan = document.createElement('span');
+                    optionTextSpan.className = 'review-option-text';
+                    optionTextSpan.textContent = optionText;
+                    
+                    // Add indicator for correct/user answer
+                    const indicator = document.createElement('span');
+                    indicator.className = 'review-indicator';
+                    if (isCorrectAnswer) {
+                        indicator.textContent = ' (Correct Answer)';
+                        indicator.classList.add('correct');
+                    } else if (isUserAnswer) {
+                        indicator.textContent = ' (Your Answer)';
+                        indicator.classList.add('incorrect');
+                    }
+                    
+                    optionDiv.appendChild(optionLetter);
+                    optionDiv.appendChild(optionTextSpan);
+                    if (isCorrectAnswer || isUserAnswer) {
+                        optionDiv.appendChild(indicator);
+                    }
+                    
+                    optionsContainer.appendChild(optionDiv);
+                });
+            }
+            
+            questionDiv.appendChild(optionsContainer);
             reviewList.appendChild(questionDiv);
         });
         

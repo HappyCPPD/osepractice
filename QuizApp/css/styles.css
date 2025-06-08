@@ -239,15 +239,15 @@ h2 {
 }
 
 .option.correct {
-    background-color: #e0f0e3;
-    border-color: #c7e6d7;
-    color: #2d6a4f;
+    background-color: #edf5f0;
+    border-color: #d8e8e0;
+    color: #3a5a4a;
 }
 
 .option.incorrect {
-    background-color: #f5e6e8;
-    border-color: #ecd5da;
-    color: #9d4456;
+    background-color: #f5eeef;
+    border-color: #e8d8dd;
+    color: #7a4e57;
 }
 
 .option-letter {
@@ -335,17 +335,17 @@ h2 {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .review-item.correct {
-    background-color: #f0f7f2;
-    border-left: 4px solid #2d6a4f;
+    background-color: #f7faf8;
+    border-left: 4px solid #3a5a4a;
 }
 
 .review-item.incorrect {
-    background-color: #f7f0f2;
-    border-left: 4px solid #9d4456;
+    background-color: #faf7f8;
+    border-left: 4px solid #7a4e57;
 }
 
 .review-question {
@@ -361,8 +361,8 @@ h2 {
 }
 
 .review-answer {
-    background-color: #e0f0e3;
-    color: #2d6a4f;
+    background-color: #edf5f0;
+    color: #3a5a4a;
     padding: 6px 10px;
     border-radius: 4px;
     font-weight: 500;
@@ -370,8 +370,8 @@ h2 {
 }
 
 .review-user-answer {
-    background-color: #f5e6e8;
-    color: #9d4456;
+    background-color: #f5eeef;
+    color: #7a4e57;
     padding: 6px 10px;
     border-radius: 4px;
     font-weight: 500;
@@ -413,15 +413,75 @@ h2 {
 }
 
 .answer-feedback.correct {
-    background-color: #e0f0e3;
-    color: #2d6a4f;
-    border: 1px solid #c7e6d7;
+    background-color: #edf5f0;
+    color: #3a5a4a;
+    border: 1px solid #d8e8e0;
 }
 
 .answer-feedback.incorrect {
-    background-color: #f5e6e8;
-    color: #9d4456;
-    border: 1px solid #ecd5da;
+    background-color: #f5eeef;
+    color: #7a4e57;
+    border: 1px solid #e8d8dd;
+}
+
+/* New review options styling */
+.review-options {
+    margin-top: 12px;
+}
+
+.review-option {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ddd;
+}
+
+.review-option.correct {
+    background-color: #f2f7f4;
+    border-left-color: #3a5a4a;
+}
+
+.review-option.incorrect {
+    background-color: #f7f2f4;
+    border-left-color: #7a4e57;
+}
+
+.review-option-letter {
+    font-weight: bold;
+    margin-right: 8px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.review-option-text {
+    flex: 1;
+}
+
+.review-indicator {
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.review-indicator.correct {
+    color: #3a5a4a;
+}
+
+.review-indicator.incorrect {
+    color: #7a4e57;
+}
+
+/* Hide original review items that we're replacing */
+.review-answer, .review-user-answer {
+    display: none;
 }
 
 @media (max-width: 768px) {
