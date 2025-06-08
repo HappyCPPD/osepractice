@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Practice</h1>
+        </header>
+        
+        <!-- Quiz Setup Screen -->
+        <div id="quiz-setup" class="section">
+            <h2>Select Chapters</h2>
+            <div id="chapters-container">
+                <!-- Chapter checkboxes will be added here dynamically -->
+            </div>
+            
+            <div class="info-text" id="selected-count">0 chapters selected (0 questions available)</div>
+            
+            <button id="toggle-all" class="toggle-button">Toggle All</button>
+            
+            <div class="settings-section">
+                <h2>Quiz Settings</h2>
+                
+                <div class="control-group">
+                    <label for="question-count">Number of Questions:</label>
+                    <input type="number" id="question-count" class="form-control" min="1" value="10">
+                </div>
+                
+                <div class="control-group">
+                    <label for="timer-enabled">Timer:</label>
+                    <div class="timer-container">
+                        <input type="checkbox" id="timer-enabled">
+                        <input type="number" id="timer-minutes" class="form-control timer-input" min="1" max="60" value="10">
+                        <span>minutes</span>
+                    </div>
+                </div>
+                
+                <button id="start-quiz" class="btn btn-primary" disabled>Start Quiz</button>
+            </div>
+        </div>
+        
+        <!-- Quiz Interface -->
+        <div id="quiz-interface" class="hidden">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            
+            <div class="question-info">
+                <div id="question-progress">Question 1 of 10</div>
+                <div id="current-chapter" class="chapter-badge">Chapter 11: Windows</div>
+                <div id="timer-display" class="timer-display hidden">
+                    <span id="timer-value">10:00</span>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div id="question-text" class="question-text">
+                    Which Windows version first introduced the "Start" fullscreen Start screen?
+                </div>
+                
+                <div class="options-container">
+                    <div id="options-list">
+                        <!-- Options will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <div></div>
+                <div>
+                    <button id="next-question" class="btn btn-primary" disabled>Next Question</button>
+                    <button id="finish-quiz" class="btn btn-success hidden">Finish Quiz</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Results Screen -->
+        <div id="results-screen" class="hidden">
+            <div class="results-container">
+                <h2 class="result-header">Quiz Results</h2>
+                
+                <div id="result-score" class="result-score">8/10 (80%)</div>
+                <div id="result-status" class="result-status pass">PASS</div>
+                
+                <div class="review-section">
+                    <h3 class="review-title">Questions Review</h3>
+                    <div id="review-list" class="review-list">
+                        <!-- Review items will be added here dynamically -->
+                    </div>
+                </div>
+                
+                <div class="actions">
+                    <button id="restart-quiz" class="btn btn-primary">Take Another Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="data/process_questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html> 
