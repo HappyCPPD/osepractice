@@ -1,3 +1,502 @@
 [
-  // ... 50 questions from Chapter 14.md in the same format as chapter11.json ...
+  {
+    "question": "A customer is frustrated because their PC keeps crashing mid-presentation. You listen without interrupting, then say, \"I understand you're upset.\" That technique is an example of:",
+    "options": [
+      "Closed-ended questioning",
+      "Empathy and active listening",
+      "Technical jargon to reassure them",
+      "Mirroring their tone"
+    ],
+    "answer": "Empathy and active listening"
+  },
+  {
+    "question": "While on a support call, you notice you're frowning when clarifying the customer's issue. You might use a desk mirror to:",
+    "options": [
+      "Improve your typing speed",
+      "Check your facial expressions and maintain a positive tone",
+      "Verify the customer's hardware model",
+      "Note the time of day"
+    ],
+    "answer": "Check your facial expressions and maintain a positive tone"
+  },
+  {
+    "question": "After the customer explains their problem fully, you repeat back key details before asking yes/no questions. This step is called:",
+    "options": [
+      "Paraphrasing and summarizing",
+      "Closed-ended probing",
+      "Technical escalation",
+      "Mirroring"
+    ],
+    "answer": "Paraphrasing and summarizing"
+  },
+  {
+    "question": "A customer's voice goes silent after you ask a technical term. To maintain rapport, you should next:",
+    "options": [
+      "Continue with another term",
+      "Ask \"Can you tell me what operating system you're using?\"",
+      "Transfer the call immediately",
+      "End the call politely"
+    ],
+    "answer": "Ask \"Can you tell me what operating system you're using?\""
+  },
+  {
+    "question": "During troubleshooting, you ask, \"What were you doing when the error appeared?\" That's an example of:",
+    "options": [
+      "Closed-ended question",
+      "Open-ended question to gather context",
+      "Leading question",
+      "Reflective listening"
+    ],
+    "answer": "Open-ended question to gather context"
+  },
+  {
+    "question": "You catch yourself using acronyms the customer doesn't know. You should:",
+    "options": [
+      "Keep using them to save time",
+      "Switch to plain language and explain terms",
+      "Transfer the call to another team",
+      "End the call and send an email"
+    ],
+    "answer": "Switch to plain language and explain terms"
+  },
+  {
+    "question": "A customer seems nervous describing a network failure. To ease tension, you:",
+    "options": [
+      "Speak more quickly",
+      "Use a calm tone and reassuring phrases like \"I'm here to help\"",
+      "Skip the greeting and jump into diagnostics",
+      "Put them on hold repeatedly"
+    ],
+    "answer": "Use a calm tone and reassuring phrases like \"I'm here to help\""
+  },
+  {
+    "question": "You ask a single yes/no question about whether the PC powers on. This is an example of a:",
+    "options": [
+      "Open-ended question",
+      "Closed-ended question",
+      "Reflective statement",
+      "Empathetic response"
+    ],
+    "answer": "Closed-ended question"
+  },
+  {
+    "question": "You avoid minimizing the customer's concerns by:",
+    "options": [
+      "Saying \"That's normal, don't worry\"",
+      "Saying \"I understand how important this is; let's work through it\"",
+      "Ending the call quickly",
+      "Blaming third-party software"
+    ],
+    "answer": "Saying \"I understand how important this is; let's work through it\""
+  },
+  {
+    "question": "When wrapping up the call, you confirm next steps and thank the customer. This demonstrates:",
+    "options": [
+      "Poor listening skills",
+      "Professional closure and customer care",
+      "Technical incompetence",
+      "Rushed service"
+    ],
+    "answer": "Professional closure and customer care"
+  },
+  {
+    "question": "Your team is about to update server firmware. Before proceeding, you review the change control process to:",
+    "options": [
+      "Skip documentation",
+      "Ensure standardized, repeatable procedures",
+      "Bypass approvals for speed",
+      "Avoid regulatory compliance"
+    ],
+    "answer": "Ensure standardized, repeatable procedures"
+  },
+  {
+    "question": "You receive a new application diagram and write a knowledge-base article. This documentation step primarily serves to:",
+    "options": [
+      "Increase confusion",
+      "Standardize procedures for future reference",
+      "Comply with government privacy laws only",
+      "Impede on-boarding"
+    ],
+    "answer": "Standardize procedures for future reference"
+  },
+  {
+    "question": "After an unscheduled outage, you follow the disaster recovery plan to restore services from an off-site location. This is part of:",
+    "options": [
+      "Incident handling policy",
+      "Verification phase of DR planning",
+      "Change management",
+      "Root cause analysis"
+    ],
+    "answer": "Verification phase of DR planning"
+  },
+  {
+    "question": "In preparing for a disaster, you list critical services (e.g., authentication, web servers) and backup power. This belongs in which DR plan phase?",
+    "options": [
+      "Phase 1: Recovery strategy design",
+      "Phase 3: Verification",
+      "Phase 5: Review",
+      "Phase 2: Inventory and documentation"
+    ],
+    "answer": "Phase 1: Recovery strategy design"
+  },
+  {
+    "question": "Your organization must retain network logs for one year to meet industry regulations. You document this retention in:",
+    "options": [
+      "Change control policy",
+      "Regulatory compliance requirements",
+      "Call-center script",
+      "Incident handling chart"
+    ],
+    "answer": "Regulatory compliance requirements"
+  },
+  {
+    "question": "A planned update on your email server is scheduled. You log the action, expected downtime, and approval. This step is:",
+    "options": [
+      "Bypassing SLA",
+      "Change management documentation",
+      "Emergency escalation",
+      "Forensic evidence gathering"
+    ],
+    "answer": "Change management documentation"
+  },
+  {
+    "question": "After a planned maintenance window, you compare actual vs. planned outcomes, updating the procedure. This is:",
+    "options": [
+      "Incident handling",
+      "Phase 5: Review of the disaster recovery plan",
+      "Phase 4: Approval only",
+      "Regulatory violation"
+    ],
+    "answer": "Phase 5: Review of the disaster recovery plan"
+  },
+  {
+    "question": "You create a diagram showing data-flow for a new service. This helps primarily with:",
+    "options": [
+      "Disk cleanup",
+      "Providing clear instructions for future technicians",
+      "Encryption key management",
+      "Password policy enforcement"
+    ],
+    "answer": "Providing clear instructions for future technicians"
+  },
+  {
+    "question": "If you discover discrepancies between actual and documented procedures post-outage, you update the documents during:",
+    "options": [
+      "Phase 3",
+      "Phase 5: Review",
+      "Inventory phase",
+      "Approval phase"
+    ],
+    "answer": "Phase 5: Review"
+  },
+  {
+    "question": "Maintaining a change log to track all updates satisfies which key operational goal?",
+    "options": [
+      "Increasing confusion",
+      "Ensuring traceability and repeatability",
+      "Evading audits",
+      "Reducing knowledge sharing"
+    ],
+    "answer": "Ensuring traceability and repeatability"
+  },
+  {
+    "question": "You find PII on a decommissioned PC. Before wiping, you must:",
+    "options": [
+      "Post details on social media",
+      "Protect it under data-protection regulations (e.g., HIPAA)",
+      "Share with unauthorized colleagues",
+      "Ignore and proceed"
+    ],
+    "answer": "Protect it under data-protection regulations (e.g., HIPAA)"
+  },
+  {
+    "question": "A coworker asks you to install unlicensed software. Ethically, you should:",
+    "options": [
+      "Comply to save time",
+      "Refuse and refer to licensing policies",
+      "Keep it secret",
+      "Modify the EULA"
+    ],
+    "answer": "Refuse and refer to licensing policies"
+  },
+  {
+    "question": "During a support session, you accidentally view private files. You should:",
+    "options": [
+      "Report the breach according to company policy",
+      "Delete them immediately",
+      "Share with other teams",
+      "Ignore the incident"
+    ],
+    "answer": "Report the breach according to company policy"
+  },
+  {
+    "question": "A client requests you to remove logs of unauthorized access you discovered. Legally, you must:",
+    "options": [
+      "Comply without question",
+      "Preserve logs for forensic and legal procedures",
+      "Overwrite them",
+      "Sell them"
+    ],
+    "answer": "Preserve logs for forensic and legal procedures"
+  },
+  {
+    "question": "To ensure chain of custody during a cyber-crime investigation, you first:",
+    "options": [
+      "Turn off the computer",
+      "Document all actions, times, and peripherals connected",
+      "Reboot into Safe Mode",
+      "Delete volatile data"
+    ],
+    "answer": "Document all actions, times, and peripherals connected"
+  },
+  {
+    "question": "PHI breaches require compliance with:",
+    "options": [
+      "PCI DSS",
+      "HIPAA regulations",
+      "EULA agreements",
+      "SSID standards"
+    ],
+    "answer": "HIPAA regulations"
+  },
+  {
+    "question": "When collecting volatile data for forensics, you avoid shutting down the system because:",
+    "options": [
+      "You want to save time",
+      "Volatile data in RAM and open connections would be lost",
+      "It's not part of chain of custody",
+      "It will erase hard drive data"
+    ],
+    "answer": "Volatile data in RAM and open connections would be lost"
+  },
+  {
+    "question": "Unauthorized sharing of sensitive customer info violates:",
+    "options": [
+      "Change management",
+      "Cyber laws and privacy policies",
+      "Disaster recovery",
+      "Active Directory best practices"
+    ],
+    "answer": "Cyber laws and privacy policies"
+  },
+  {
+    "question": "You capture network packets during an incident. This activity falls under:",
+    "options": [
+      "Incident response forensics",
+      "Routine backups",
+      "Call-center scripting",
+      "Disaster review"
+    ],
+    "answer": "Incident response forensics"
+  },
+  {
+    "question": "First responders to a cyber-incident must know:",
+    "options": [
+      "How to turn off all devices",
+      "What to collect and what not to do to preserve evidence",
+      "How to overwrite logs",
+      "Publicize the breach immediately"
+    ],
+    "answer": "What to collect and what not to do to preserve evidence"
+  },
+  {
+    "question": "A caller reports their PC won't boot. As a Level 1 technician, your first task is to:",
+    "options": [
+      "Escalate immediately to Level 2",
+      "Gather incident details and attempt basic hardware fixes",
+      "Send a remote script without context",
+      "Hang up and call back later"
+    ],
+    "answer": "Gather incident details and attempt basic hardware fixes"
+  },
+  {
+    "question": "When calls exceed your knowledge, you escalate according to the SLA. This ensures:",
+    "options": [
+      "Customer frustration",
+      "Compliance with support-level agreements",
+      "Extended downtime",
+      "Ignoring customer needs"
+    ],
+    "answer": "Compliance with support-level agreements"
+  },
+  {
+    "question": "Your call-center software shows customer history. You use it to:",
+    "options": [
+      "Skip greeting",
+      "Research past incidents and speed up resolution",
+      "Delete records",
+      "Bill extra hours"
+    ],
+    "answer": "Research past incidents and speed up resolution"
+  },
+  {
+    "question": "In the \"Remote Technician – Fix a Network Problem\" lab, you instruct a customer to run:",
+    "options": [
+      "Disk Cleanup",
+      "ifconfig or ip address to check interface status",
+      "Disk Utility",
+      "regedit"
+    ],
+    "answer": "ifconfig or ip address to check interface status"
+  },
+  {
+    "question": "A Level 2 technician must supply support per the customer's:",
+    "options": [
+      "Personal preference",
+      "Service Level Agreement",
+      "Industry rumor",
+      "Social media comments"
+    ],
+    "answer": "Service Level Agreement"
+  },
+  {
+    "question": "To log and track incidents, you primarily use the call-board to:",
+    "options": [
+      "Randomly pick calls",
+      "Display and prioritize incoming calls",
+      "Delete old logs",
+      "Bypass documentation"
+    ],
+    "answer": "Display and prioritize incoming calls"
+  },
+  {
+    "question": "When a customer can't connect to wireless, lab instructions say to:",
+    "options": [
+      "Disable SSID broadcast",
+      "Walk them through wireless security settings (WPA2, SSID, key)",
+      "Change their EULA",
+      "Upgrade to Windows 95"
+    ],
+    "answer": "Walk them through wireless security settings (WPA2, SSID, key)"
+  },
+  {
+    "question": "A lab on fixing OS problems requires you to guide the customer to:",
+    "options": [
+      "Reformat immediately",
+      "Boot into Safe Mode and check for startup errors",
+      "Ignore the error",
+      "Transfer to another country"
+    ],
+    "answer": "Boot into Safe Mode and check for startup errors"
+  },
+  {
+    "question": "Call-center support tools include all except:",
+    "options": [
+      "Diagnostic utilities",
+      "Knowledge-base research",
+      "Video-game playing",
+      "Customer feedback collection"
+    ],
+    "answer": "Video-game playing"
+  },
+  {
+    "question": "Documenting contact info and incident details falls under:",
+    "options": [
+      "Active Directory management",
+      "Level 1 technician responsibilities",
+      "Disaster recovery",
+      "Encryption key management"
+    ],
+    "answer": "Level 1 technician responsibilities"
+  },
+  {
+    "question": "You need to automate a weekly backup on Linux. Which script file extension might you create?",
+    "options": [
+      ".sh",
+      ".bat",
+      ".ps1",
+      ".exe"
+    ],
+    "answer": ".sh"
+  },
+  {
+    "question": "To loop through a list of filenames in a Linux shell script, you'd use:",
+    "options": [
+      "for filename in *.log; do …; done",
+      "foreach (…);",
+      "while (!eof);",
+      "loop { }"
+    ],
+    "answer": "for filename in *.log; do …; done"
+  },
+  {
+    "question": "In a Windows batch script, to echo text you use:",
+    "options": [
+      "print \"text\"",
+      "echo Text",
+      "console.log()",
+      "write()"
+    ],
+    "answer": "echo Text"
+  },
+  {
+    "question": "A script that checks an environment variable %PATH% runs on:",
+    "options": [
+      "BIOS",
+      "CMD or PowerShell",
+      "Disk Utility",
+      "HTTP server"
+    ],
+    "answer": "CMD or PowerShell"
+  },
+  {
+    "question": "To test if a file exists in a Bash script, you might write:",
+    "options": [
+      "if [ -f \"/path/to/file\" ]; then … fi",
+      "if exists file;",
+      "if file?;",
+      "if (file) { }"
+    ],
+    "answer": "if [ -f \"/path/to/file\" ]; then … fi"
+  },
+  {
+    "question": "In JavaScript, a conditional statement begins with:",
+    "options": [
+      "do { } while();",
+      "if (condition) { }",
+      "switch-case only",
+      "loop()"
+    ],
+    "answer": "if (condition) { }"
+  },
+  {
+    "question": "A Python script to import environment variables uses:",
+    "options": [
+      "import os",
+      "load env",
+      "use system.env",
+      "include variables"
+    ],
+    "answer": "import os"
+  },
+  {
+    "question": "To run the same task repeatedly until a condition is met in Bash, you use:",
+    "options": [
+      "until [ condition ]; do …; done",
+      "loop until",
+      "repeat { }",
+      "break if"
+    ],
+    "answer": "until [ condition ]; do …; done"
+  },
+  {
+    "question": "Which scripting language is cross-platform and commonly used for quick tasks?",
+    "options": [
+      "PowerShell only",
+      "Python",
+      "VBScript",
+      "Batch"
+    ],
+    "answer": "Python"
+  },
+  {
+    "question": "When debugging a broken script, the first step is to:",
+    "options": [
+      "Rewrite the entire script",
+      "Read error messages and verify syntax line by line",
+      "Delete the script",
+      "Post it publicly"
+    ],
+    "answer": "Read error messages and verify syntax line by line"
+  }
 ] 

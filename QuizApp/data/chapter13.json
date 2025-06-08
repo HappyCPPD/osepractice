@@ -1,3 +1,252 @@
 [
-  // ... 50 questions from Chapter 13.md in the same format as chapter11.json ...
-] 
+  {
+    "question": "Which type of malware requires user action to propagate?",
+    "options": ["Worm", "Virus", "Rootkit", "Ransomware"],
+    "answer": "B"
+  },
+  {
+    "question": "A program that looks useful but carries hidden malicious code is called a:",
+    "options": ["Worm", "Spyware", "Trojan horse", "Adware"],
+    "answer": "C"
+  },
+  {
+    "question": "What does ransomware typically do?",
+    "options": ["Displays unwanted ads", "Encrypts files and demands payment", "Grants attacker admin rights", "Logs keystrokes silently"],
+    "answer": "B"
+  },
+  {
+    "question": "Which anti-malware technique uses known patterns to identify threats?",
+    "options": ["Heuristic analysis", "Signature matching", "Behavioral blocking", "Sandboxing"],
+    "answer": "B"
+  },
+  {
+    "question": "A ping sweep followed by a port scan is part of which attack stage?",
+    "options": ["Exploitation", "Reconnaissance", "Cleanup", "Privilege escalation"],
+    "answer": "B"
+  },
+  {
+    "question": "Which TCP/IP attack forges an IP address to gain resource access?",
+    "options": ["SYN flood", "DNS poisoning", "Spoofing", "Replay attack"],
+    "answer": "C"
+  },
+  {
+    "question": "A zero-day vulnerability refers to:",
+    "options": ["The moment a patch is released", "An unknown vulnerability with no fix yet", "A vulnerability that affects zero systems", "A time-based denial of service"],
+    "answer": "B"
+  },
+  {
+    "question": "Which social engineering technique involves leaving a malicious USB in public?",
+    "options": ["Pretexting", "Baiting", "Shoulder surfing", "Tailgating"],
+    "answer": "B"
+  },
+  {
+    "question": "Phishing differs from spear phishing in that spear phishing is:",
+    "options": ["Executed via phone calls", "Broadly targeted", "Highly targeted to specific individuals", "Only for financial scams"],
+    "answer": "C"
+  },
+  {
+    "question": "Defense-in-depth means:",
+    "options": ["A single strong firewall", "Multiple overlapping security layers", "Disabling unneeded services", "Updating signatures daily"],
+    "answer": "B"
+  },
+  {
+    "question": "A security policy is typically created by:",
+    "options": ["End users alone", "IT committee with management input", "External auditors only", "Network vendors"],
+    "answer": "B"
+  },
+  {
+    "question": "Which policy defines how often passwords must change?",
+    "options": ["Incident handling", "Acceptable use", "Password policy", "Remote access policy"],
+    "answer": "C"
+  },
+  {
+    "question": "A mantrap is used to prevent:",
+    "options": ["Malware infections", "Tailgating", "Data exfiltration", "Social engineering"],
+    "answer": "B"
+  },
+  {
+    "question": "Encrypting File System (EFS) in Windows is tied to:",
+    "options": ["A user account", "A hardware dongle", "BIOS password", "BitLocker only"],
+    "answer": "A"
+  },
+  {
+    "question": "BitLocker To Go is used for:",
+    "options": ["Encrypting system volumes", "Encrypting removable drives", "Network traffic encryption", "Password vaulting"],
+    "answer": "B"
+  },
+  {
+    "question": "The principle of least privilege relates to:",
+    "options": ["Minimizing password length", "Granting users only the access they need", "Using guest accounts for all users", "Encrypting all data"],
+    "answer": "B"
+  },
+  {
+    "question": "Which method is ineffective for securely erasing SSDs?",
+    "options": ["Secure erase command", "Degaussing", "File shredder tool", "Full overwrite"],
+    "answer": "B"
+  },
+  {
+    "question": "Off-site backups protect against:",
+    "options": ["BIOS attacks", "Physical disasters at the main facility", "Social engineering", "Password brute-force"],
+    "answer": "B"
+  },
+  {
+    "question": "A token-based lock uses:",
+    "options": ["A conventional key", "A smart card or fob", "A PIN only", "Biometric scan"],
+    "answer": "B"
+  },
+  {
+    "question": "To destroy paper documents containing confidential data, you should use a:",
+    "options": ["Standard photocopier", "Shredding machine", "Mirror download site", "Software wipe"],
+    "answer": "B"
+  },
+  {
+    "question": "Setting a BIOS password helps prevent:",
+    "options": ["Virus infections", "Unauthorized booting or configuration changes", "Port scanning", "Phishing"],
+    "answer": "B"
+  },
+  {
+    "question": "Which Windows feature uses facial recognition to log in?",
+    "options": ["Dynamic lock", "Windows Hello", "Picture password", "PIN"],
+    "answer": "B"
+  },
+  {
+    "question": "To enforce password complexity locally, use:",
+    "options": ["Control Panel > Backup and Restore", "secpol.msc > Account Policies > Password Policy", "Device Manager", "Event Viewer"],
+    "answer": "B"
+  },
+  {
+    "question": "Which tool manages local users and groups?",
+    "options": ["wf.msc", "lusrmgr.msc", "msconfig", "regedit"],
+    "answer": "B"
+  },
+  {
+    "question": "An Account Lockout Policy is designed to prevent:",
+    "options": ["Social engineering", "Dictionary attacks", "Hardware failure", "Encryption bypass"],
+    "answer": "B"
+  },
+  {
+    "question": "Windows Defender Firewall with Advanced Security lets you configure:",
+    "options": ["Antivirus scans", "Inbound and outbound rules", "BIOS settings", "BitLocker TPM options"],
+    "answer": "B"
+  },
+  {
+    "question": "Dynamic lock automatically locks the PC when:",
+    "options": ["The password expires", "A paired device goes out of range", "The screen saver starts", "InPrivate mode is enabled"],
+    "answer": "B"
+  },
+  {
+    "question": "To require logon on resume from screensaver, configure in:",
+    "options": ["Device Manager", "Screen Saver settings in Control Panel", "Windows Update", "Local Users and Groups"],
+    "answer": "B"
+  },
+  {
+    "question": "Exporting a local security policy produces a file with extension:",
+    "options": [".bak", ".inf", ".pol", ".reg"],
+    "answer": "B"
+  },
+  {
+    "question": "Which sign-in option uses gestures on a chosen image?",
+    "options": ["Windows Hello", "PIN", "Picture password", "SmartScreen"],
+    "answer": "C"
+  },
+  {
+    "question": "Hashing ensures which security requirement?",
+    "options": ["Confidentiality", "Integrity", "Availability", "Authentication"],
+    "answer": "B"
+  },
+  {
+    "question": "AES is an example of:",
+    "options": ["Symmetric encryption", "Hash algorithm", "Asymmetric encryption", "SSID broadcast"],
+    "answer": "A"
+  },
+  {
+    "question": "Disabling SSID broadcast provides:",
+    "options": ["Strong encryption", "Little actual security", "Automatic key rotation", "Enhanced firewall rules"],
+    "answer": "B"
+  },
+  {
+    "question": "WPA2 uses which encryption standard?",
+    "options": ["3DES", "MD5", "AES", "SHA-1"],
+    "answer": "C"
+  },
+  {
+    "question": "Port forwarding on a SOHO router is typically used for:",
+    "options": ["Encrypting Wi-Fi", "Hosting services internally", "Scanning vulnerabilities", "Disabling SSID"],
+    "answer": "B"
+  },
+  {
+    "question": "Which protocol allows devices to open ports dynamically?",
+    "options": ["DNS", "UPnP", "DHCP", "SNMP"],
+    "answer": "B"
+  },
+  {
+    "question": "To apply firmware updates to a wireless router, you normally use:",
+    "options": ["CLI only", "GUI upload interface", "Windows Update", "secpol.msc"],
+    "answer": "B"
+  },
+  {
+    "question": "A hardware firewall on a router inspects:",
+    "options": ["Application logs", "Data packets entering the LAN", "BIOS configuration", "Active Directory policies"],
+    "answer": "B"
+  },
+  {
+    "question": "WEP stands for:",
+    "options": ["Wireless Encryption Protocol", "Wired Equivalent Privacy", "Wireless Equivalent Privacy", "Wired Encryption Protocol"],
+    "answer": "B"
+  },
+  {
+    "question": "Disabling UPnP can help prevent:",
+    "options": ["Unauthorized port mappings", "SSID interception", "WPA2 key cracking", "Hash collisions"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the first step in the security troubleshooting process?",
+    "options": ["Establish a theory of probable cause", "Identify the problem", "Test the theory", "Document findings"],
+    "answer": "B"
+  },
+  {
+    "question": "After identifying the problem, you should next:",
+    "options": ["Implement preventive measures", "Establish a theory of probable cause", "Recover data from backups", "Reboot into Safe Mode"],
+    "answer": "B"
+  },
+  {
+    "question": "Testing the theory to determine cause corresponds to which step?",
+    "options": ["Step 2", "Step 3", "Step 5", "Step 6"],
+    "answer": "B"
+  },
+  {
+    "question": "Verifying full system functionality occurs in which step?",
+    "options": ["Step 4", "Step 5", "Step 1", "Step 3"],
+    "answer": "B"
+  },
+  {
+    "question": "Documenting actions and outcomes is the:",
+    "options": ["First step", "Final step", "Third step", "Optional step"],
+    "answer": "B"
+  },
+  {
+    "question": "If a user is locked out due to brute-force attempts, which policy helps?",
+    "options": ["Password policy", "Account lockout policy", "Backup policy", "Encryption policy"],
+    "answer": "B"
+  },
+  {
+    "question": "A common security troubleshooting tool for scanning open ports is:",
+    "options": ["Time Machine", "Nmap", "EFS", "BitLocker"],
+    "answer": "B"
+  },
+  {
+    "question": "Preventative measures after fixing a security issue might include:",
+    "options": ["Disabling firewall", "Updating anti-malware signatures", "Removing BIOS password", "Disabling auditing"],
+    "answer": "B"
+  },
+  {
+    "question": "Reinstalling and restoring from backups is part of:",
+    "options": ["Theory establishment", "Plan of action and implementation", "Identifying the problem", "Documentation"],
+    "answer": "B"
+  },
+  {
+    "question": "A lab work order documenting customer info belongs to which process step?",
+    "options": ["Identify the problem", "Document findings, actions, and outcomes", "Establish theory", "Verify functionality"],
+    "answer": "B"
+  }
+]
