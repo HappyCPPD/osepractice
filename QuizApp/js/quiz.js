@@ -58,14 +58,40 @@ document.addEventListener('DOMContentLoaded', () => {
         const clickedOption = e.target.closest('.option');
         if (!clickedOption) return;
         
+        // Don't allow changing answer after selection
+        const alreadyAnswered = document.querySelector('.option.correct') || document.querySelector('.option.incorrect');
+        if (alreadyAnswered) return;
+        
         const options = document.querySelectorAll('.option');
         options.forEach(option => {
             option.classList.remove('selected');
-            option.classList.remove('correct');
-            option.classList.remove('incorrect');
         });
         
         clickedOption.classList.add('selected');
+        
+        // Immediately check the answer
+        const question = currentQuestions[currentQuestionIndex];
+        if (!question) return;
+        
+        const selectedLetter = clickedOption.dataset.letter;
+        
+        if (selectedLetter === question.answer) {
+            // Correct answer
+            correctAnswers++;
+            clickedOption.classList.add('correct');
+            question.userAnsweredCorrectly = true;
+        } else {
+            // Incorrect answer
+            clickedOption.classList.add('incorrect');
+            question.userAnsweredCorrectly = false;
+            
+            // Highlight correct answer
+            const correctOption = document.querySelector(`.option[data-letter="${question.answer}"]`);
+            if (correctOption) {
+                correctOption.classList.add('correct');
+            }
+        }
+        
         document.getElementById('next-question').disabled = false;
     });
 });
@@ -345,8 +371,7 @@ function showQuestion() {
 }
 
 function nextQuestion() {
-    // Check answer
-    checkAnswer();
+    // No need to check answer here anymore since it's checked immediately on selection
     
     // Move to next question
     currentQuestionIndex++;
@@ -358,8 +383,14 @@ function nextQuestion() {
 }
 
 function checkAnswer() {
+    // This function is kept for compatibility but is no longer used directly anymore
     const selectedOption = document.querySelector('.option.selected');
     if (!selectedOption) return;
+    
+    // If already checked (has correct/incorrect class), just return
+    if (selectedOption.classList.contains('correct') || selectedOption.classList.contains('incorrect')) {
+        return;
+    }
     
     const question = currentQuestions[currentQuestionIndex];
     if (!question) return;
