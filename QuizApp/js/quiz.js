@@ -185,19 +185,34 @@ function showQuestion() {
     const optionsList = document.getElementById('options-list');
     optionsList.innerHTML = '';
     
-    const letters = ['A', 'B', 'C', 'D'];
-    question.options.forEach((option, index) => {
+    // Create array of options with their letters
+    const optionsWithLetters = question.options.map((option, index) => ({
+        text: option,
+        letter: String.fromCharCode(65 + index) // A, B, C, D
+    }));
+    
+    // Shuffle the options
+    shuffleArray(optionsWithLetters);
+    
+    // Find the new position of the correct answer
+    const correctOption = optionsWithLetters.find(opt => opt.letter === question.answer);
+    if (correctOption) {
+        question.answer = correctOption.letter;
+    }
+    
+    // Display the shuffled options
+    optionsWithLetters.forEach(option => {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
-        optionDiv.dataset.letter = letters[index];
+        optionDiv.dataset.letter = option.letter;
         
         const letterSpan = document.createElement('span');
         letterSpan.className = 'option-letter';
-        letterSpan.textContent = letters[index];
+        letterSpan.textContent = option.letter;
         
         const textSpan = document.createElement('span');
         textSpan.className = 'option-text';
-        textSpan.textContent = option;
+        textSpan.textContent = option.text;
         
         optionDiv.appendChild(letterSpan);
         optionDiv.appendChild(textSpan);
