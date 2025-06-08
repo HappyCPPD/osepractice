@@ -1,6 +1,6 @@
 [
   {
-    "question": "Which Windows version first introduced the "Start" fullscreen Start screen?",
+    "question": "Which Windows version first introduced the Start fullscreen Start screen?",
     "options": ["Windows 7", "Windows 8", "Windows 10", "Windows Vista"],
     "answer": "B"
   },
@@ -40,13 +40,13 @@
     "answer": "B"
   },
   {
-    "question": "What does the "Details pane" display when a file's selected?",
+    "question": "What does the Details pane display when a file's selected?",
     "options": ["Permissions only", "Thumbnails only", "Metadata, preview, and details", "Disk usage"],
     "answer": "C"
   },
   {
     "question": "Which option in File Explorer hides file name extensions?",
-    "options": ["View → Details", "View → Hide selected items", "View → Options → Change folder and search options", "View → Options → View tab → Uncheck "Hide extensions for known file types""],
+    "options": ["View → Details", "View → Hide selected items", "View → Options → Change folder and search options", "View → Options → View tab → Uncheck Hide extensions for known file types"],
     "answer": "D"
   },
   {"question": "Which Control Panel icon opens user accounts and credential settings?", "options": ["System", "User Accounts", "Devices and Printers", "Security and Maintenance"], "answer": "B"},

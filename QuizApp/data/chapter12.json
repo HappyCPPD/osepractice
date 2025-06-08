@@ -1,3 +1,202 @@
 [
-  // ... 50 questions from Chapter 12.md in the same format as chapter11.json ...
-] 
+  {
+    "question": "Which mobile OS is open source?",
+    "options": ["iOS", "Android", "Windows Phone", "Blackberry OS"],
+    "answer": "B"
+  },
+  {
+    "question": "Apple's \"walled garden\" model refers to:",
+    "options": ["The sandboxing of Android apps", "Closed-source development and App Store approval", "Third-party APK sideloading", "Open-source code repositories"],
+    "answer": "B"
+  },
+  {
+    "question": "On Android, which button returns you to the launcher/home screen?",
+    "options": ["Back", "Recent Apps", "Home", "Menu"],
+    "answer": "C"
+  },
+  {
+    "question": "To dismiss all notifications on Android, you:",
+    "options": ["Swipe each off individually", "Tap the clear-all icon in the notification shade", "Long-press the status bar", "Press Back repeatedly"],
+    "answer": "B"
+  },
+  {
+    "question": "iOS devices lack __________ compared to Android home screens.",
+    "options": ["App icons", "Widgets", "Folders", "A notification area"],
+    "answer": "B"
+  },
+  {
+    "question": "Which sensor allows auto-rotation of the screen?",
+    "options": ["GPS", "Accelerometer", "Gyroscope", "Magnetometer"],
+    "answer": "B"
+  },
+  {
+    "question": "Geotracking on mobile devices commonly uses:",
+    "options": ["NFC", "Bluetooth", "GPS and Wi-Fi triangulation", "Infrared"],
+    "answer": "C"
+  },
+  {
+    "question": "NFC payment is most similar to:",
+    "options": ["Premium SMS billing", "Contactless card transactions", "Direct carrier billing", "VPN tunneling"],
+    "answer": "B"
+  },
+  {
+    "question": "To enable automatic brightness on Android, you go to:",
+    "options": ["Settings → Display → Auto‐rotate", "Settings → Display → Brightness → Auto-adjust", "Settings → More → VPN", "Settings → Location"],
+    "answer": "B"
+  },
+  {
+    "question": "Which virtual assistant responds to \"Hey Siri\"?",
+    "options": ["Google Now", "Cortana", "Alexa", "Siri"],
+    "answer": "D"
+  },
+  {
+    "question": "After 10 failed passcode attempts, an iOS device will:",
+    "options": ["Lock temporarily", "Require Gmail login", "Erase all data", "Switch to Guest mode"],
+    "answer": "C"
+  },
+  {
+    "question": "Android devices typically lock after how many incorrect PIN attempts?",
+    "options": ["2–3", "4–12", "15–20", "Unlimited"],
+    "answer": "B"
+  },
+  {
+    "question": "Which service allows remote location, locking, or wiping of an Android phone?",
+    "options": ["Find My iPhone", "Android Device Manager", "Google Now", "Google Sync"],
+    "answer": "B"
+  },
+  {
+    "question": "Remote wipe of an iOS device is done via:",
+    "options": ["iCloud's Find My iPhone", "Android Device Manager", "iTunes Backup only", "Settings → Security"],
+    "answer": "A"
+  },
+  {
+    "question": "Biometric authentication on a device uses:",
+    "options": ["PIN only", "Fingerprint or facial recognition", "GPS location", "VPN credentials"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these is NOT a cloud backup service?",
+    "options": ["iCloud", "Google Sync", "OneDrive", "APK sideloading"],
+    "answer": "D"
+  },
+  {
+    "question": "Jailbreaking refers to:",
+    "options": ["Installing antivirus on Android", "Gaining root access on Android", "Removing Apple restrictions on iOS", "Encrypting the file system"],
+    "answer": "C"
+  },
+  {
+    "question": "Rooting an Android device allows:",
+    "options": ["Factory reset only", "Installing unsigned APKs outside the Play Store", "Automatic OTA updates only", "Disabling airplane mode"],
+    "answer": "B"
+  },
+  {
+    "question": "To receive OS security patches on mobile, you rely on:",
+    "options": ["Manual firmware flashing only", "Automated update notifications", "Third-party app stores", "SD card backups"],
+    "answer": "B"
+  },
+  {
+    "question": "A firewall on a mobile device helps prevent:",
+    "options": ["Malware from downloading updates", "Unauthorized network connections", "Passcode brute forcing", "USB data transfer"],
+    "answer": "B"
+  },
+  {
+    "question": "macOS is based on which Unix variant?",
+    "options": ["System V", "Berkeley BSD", "MINIX", "AIX"],
+    "answer": "B"
+  },
+  {
+    "question": "The Ubuntu GUI named \"Unity\" is:",
+    "options": ["Closed source", "A desktop shell for Linux", "Exclusive to macOS", "Used for Android phones"],
+    "answer": "B"
+  },
+  {
+    "question": "Time Machine on macOS performs:",
+    "options": ["Real-time sync", "Incremental backups to an external drive", "Cloud-only backups", "Disk defragmentation"],
+    "answer": "B"
+  },
+  {
+    "question": "Which Linux tool provides a S.M.A.R.T. health check?",
+    "options": ["Disks (gnome-disk-utility)", "Disk Utility", "Time Machine", "Backup and Restore"],
+    "answer": "A"
+  },
+  {
+    "question": "To schedule recurring tasks on Linux/macOS, you use:",
+    "options": ["Task Scheduler", "cron", "at", "schtasks"],
+    "answer": "B"
+  },
+  {
+    "question": "The command to change file permissions in Linux is:",
+    "options": ["chown", "chmod", "ls -l", "mkfs"],
+    "answer": "B"
+  },
+  {
+    "question": "Finder on macOS is most similar to:",
+    "options": ["Linux Terminal", "Windows File Explorer", "Android Home Screen", "Disk Utility"],
+    "answer": "B"
+  },
+  {
+    "question": "NetBoot on macOS is used for:",
+    "options": ["Network-based OS deployment", "Wired internet only", "Bluetooth file transfer", "Wireless printing"],
+    "answer": "A"
+  },
+  {
+    "question": "Which package manager is used on Debian-based Linux distros?",
+    "options": ["yum", "apt-get", "pacman", "zypper"],
+    "answer": "B"
+  },
+  {
+    "question": "The default shell on most Linux/macOS systems is:",
+    "options": ["cmd.exe", "PowerShell", "Bash", "Fish"],
+    "answer": "C"
+  },
+  {
+    "question": "The first step in the six-step troubleshooting process is to:",
+    "options": ["Implement the solution", "Identify the problem", "Establish a theory", "Verify functionality"],
+    "answer": "B"
+  },
+  {
+    "question": "Which step comes immediately after establishing a theory?",
+    "options": ["Document findings", "Test the theory", "Implement preventive measures", "Escalate the issue"],
+    "answer": "B"
+  },
+  {
+    "question": "When isolating hardware vs. software issues on Linux, you might use:",
+    "options": ["Safe Mode", "crontab", "Time Machine", "Disk Cleanup"],
+    "answer": "A"
+  },
+  {
+    "question": "A common mobile OS problem is app crashes; a likely solution is:",
+    "options": ["Defragment the storage", "Reinstall or update the app", "Increase screen brightness", "Unlock the bootloader"],
+    "answer": "B"
+  },
+  {
+    "question": "On macOS, repair disk permissions using:",
+    "options": ["Time Machine", "Disk Utility → First Aid", "Finder → Get Info", "Terminal → chmod"],
+    "answer": "B"
+  },
+  {
+    "question": "After implementing a fix, you must:",
+    "options": ["Close the case", "Verify full system functionality", "Delete event logs", "Disable backups"],
+    "answer": "B"
+  },
+  {
+    "question": "If the first fix fails, you should:",
+    "options": ["Restart immediately", "Establish a new theory", "Ignore the issue", "Uninstall the OS"],
+    "answer": "B"
+  },
+  {
+    "question": "Documenting the troubleshooting process helps:",
+    "options": ["Reduce disk usage", "Provide a reference for future issues", "Speed up the network", "Automate backups"],
+    "answer": "B"
+  },
+  {
+    "question": "A scenario-based Linux issue where the network won't connect might be diagnosed with:",
+    "options": ["ipconfig", "ifconfig/ip address", "Disk Utility", "Disk Cleanup"],
+    "answer": "B"
+  },
+  {
+    "question": "The final step of troubleshooting is to:",
+    "options": ["Disconnect the user", "Document and review outcomes", "Reboot the device twice", "Encrypt the drive"],
+    "answer": "B"
+  }
+]
