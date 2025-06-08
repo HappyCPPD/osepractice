@@ -137,6 +137,12 @@ async function startQuiz() {
         alert('Please select at least one chapter.');
         return;
     }
+    
+    // Ensure chapterList is loaded
+    if (chapterList.length === 0) {
+        await loadChapterList();
+    }
+    
     // Gather all questions from selected chapters
     let allQuestions = [];
     for (const chapterNum of selectedChapters) {
